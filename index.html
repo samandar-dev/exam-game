@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game</title>
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+
+  <div class="game">
+    <div class="container">
+      <div class="game__inner">
+        <div class="game__top top">
+          <div class="top__left">
+            <div class="top__level">
+              <span>1</span>
+            </div>
+            <span class="top__alar">
+              <i class='bx bx-alarm'></i>
+            </span>
+            <div class="top__time">
+              <span id="time1">5</span>
+              <span id="time2">00</span>
+            </div>
+            <div class="top__star">
+              <span>
+                <i class='bx bxs-star'></i>
+              </span>
+              <p class="top__price">0</p>
+            </div>
+          </div>
+          <div class="top__right">
+            <button class="top__icon">
+              <span>
+                <i class='bx bx-shuffle'></i>
+              </span>
+              <p id="Iconprice">5</p>
+            </button>
+            <button class="top__search">
+              <span>
+                <i class='bx bx-search-alt'></i>
+              </span>
+              <p>5</p>
+            </button>
+            <button class="top__pausa">
+              <i class='bx bx-pause'></i>
+            </button>
+          </div>
+        </div>
+        <ul class="game__list"></ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal">
+    <p class="win_nowin">Lose</p>
+    <button class="restart">Restart</button>
+  </div>
+
+
+  <script src="js/object.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

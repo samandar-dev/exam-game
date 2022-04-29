@@ -1,0 +1,252 @@
+.game {
+  width: 100%;
+  height: 100vh;
+  background: #13162d;
+}
+
+.game__inner {
+  width: 100%;
+  height: 100%;
+}
+
+.game__list {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.game__item {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  // padding: 2px;
+  background: rgb(255, 255, 255);
+  border: 2px solid rgb(214, 214, 214);
+  border-radius: 10px;
+  overflow: hidden;
+  object-fit: cover;
+  text-align: center;
+  cursor: pointer;
+}
+
+.game__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.items-cardinata {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  font-family: sans-serif;
+  color: transparent;
+}
+
+.game__top {
+  width: 100%;
+  height: auto;
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top__left {
+  display: flex;
+  align-items: center;
+}
+
+.top__level {
+  text-align: center;
+  padding: 9px 15px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 700;
+  font-family: sans-serif;
+  background: #6331ba;
+  border: 2px solid rgb(197, 196, 196);
+  margin-right: 20px;
+}
+
+.top__alar {
+  font-size: 40px;
+  font-weight: 700;
+  color: rgb(20, 199, 100);
+  background: transparent;
+  margin-right: 10px;
+}
+
+.top__time {
+  width: 80px;
+  text-align: center;
+  background: #03033f;
+  border-radius: 10px;
+  box-shadow: rgba(255, 255, 255, 0.342) 0px -3px 2px 0px inset;
+  padding: 5px;
+  & span {
+    font-size: 25px;
+    font-weight: 700;
+    font-family: sans-serif;
+    color: #fff;
+  }
+}
+
+.top__star {
+  width: 100px;
+  background: #03033f;
+  border-radius: 10px;
+  box-shadow: rgba(255, 255, 255, 0.342) 0px -3px 2px 0px inset;
+  margin-left: 50px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+
+  & span {
+    color: #e0d206;
+    font-size: 35px;
+    margin-left: 10px;
+    margin-left: -40px;
+    margin-right: 10px;
+  }
+
+  & p {
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 700;
+  }
+}
+
+.top__right {
+  display: flex;
+  align-items: center;
+}
+
+.top__icon {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+
+  span {
+    font-size: 35px;
+    color: #e2c313;
+  }
+
+  p {
+    margin: 0;
+    color: #fff;
+    font-weight: 700;
+    font-family: sans-serif;
+    display: flex;
+    margin-left: 5px;
+  }
+}
+
+.top__search {
+  display: flex;
+  align-items: center;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+
+  span {
+    font-size: 35px;
+    color: #5aee04;
+  }
+
+  p {
+    margin: 0;
+    color: #fff;
+    font-weight: 700;
+    font-family: sans-serif;
+    display: flex;
+    margin-left: 5px;
+  }
+}
+
+.top__pausa {
+  font-size: 50px;
+  color: #fff;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.788);
+  text-align: center;
+  padding-top: 200px;
+  transition: all 0.5s ease;
+  opacity: 0;
+  z-index: -10;
+}
+
+.win_nowin {
+  font-size: 40px;
+  line-height: 50px;
+  font-family: sans-serif;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.restart {
+  padding: 10px 45px;
+  border: none;
+  background: rgb(42, 201, 2);
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  font-family: sans-serif;
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    background: rgb(42, 155, 14);
+  }
+}
+
+.open {
+  opacity: 1;
+  z-index: 100;
+}
+
+.none {
+  opacity: 0;
+  z-index: -100;
+}
+
+.itemsEmpty {
+  opacity: 0 !important;
+}
+
+.actItems {
+  background: rgba(164, 43, 201, 0.658) !important;
+}
+
+.removItems {
+  background: rgba(49, 48, 48, 0.363) !important;
+  border: 2px solid rgba(214, 214, 214, 0.103) !important;
+}

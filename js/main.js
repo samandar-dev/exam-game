@@ -219,14 +219,14 @@ function compare2(x, y) {
 
 
 function removItems(img1ID, img2Id) {
+  priceItmes += 5
   empArr1.forEach((em1, einx1) => {
     empArr2.forEach((em2, einx2) => {
       items.forEach((itms, itxx) => {
         images.forEach((img, imixx) => {
           if (em1.x == em2.x || em1.y == em2.y) {
             if (img1ID == img2Id && img.id == img1ID && img.id == img2Id && img.classList.contains('click')) {
-              priceItmes += 10
-              let nat = eval(priceItmes)
+              let nat = priceItmes
               price.innerHTML = nat
               img.remove()
             }
@@ -255,6 +255,9 @@ function remItemTwo(imgId1, imgId2, x1, y1, x2, y2) {
       images.forEach((imgs, inxx) => {
         if (imgs.classList.contains('click')) {
           console.log('top');
+          priceItmes += 5
+          let nat = priceItmes
+          price.innerHTML = nat
           imgs.remove()
         }
         else {
@@ -268,6 +271,9 @@ function remItemTwo(imgId1, imgId2, x1, y1, x2, y2) {
       images.forEach((imgs, inxx) => {
         if (imgs.classList.contains('click')) {
           console.log('right');
+          priceItmes += 5
+          let nat = priceItmes
+          price.innerHTML = nat
           imgs.remove()
         }
         else {
@@ -281,6 +287,9 @@ function remItemTwo(imgId1, imgId2, x1, y1, x2, y2) {
       images.forEach((imgs, inxx) => {
         if (imgs.classList.contains('click')) {
           console.log('bootom');
+          priceItmes += 5
+          let nat = priceItmes
+          price.innerHTML = nat
           imgs.remove()
         }
         else {
@@ -294,6 +303,9 @@ function remItemTwo(imgId1, imgId2, x1, y1, x2, y2) {
       images.forEach((imgs, inxx) => {
         if (imgs.classList.contains('click')) {
           console.log('left');
+          priceItmes += 5
+          let nat = priceItmes
+          price.innerHTML = nat
           imgs.remove()
         }
         else {
